@@ -1,0 +1,311 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*   display: flex;
+    justify-content: center;
+    position: relative; */
+    font-family: 'Montserrat';
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bgc {
+    background: linear-gradient(90deg, #FCFEFE 0%, #A5DEFF 100%);
+    height: 720px;
+    /* display: flex; */
+    /*  flex-wrap: wrap; */
+    /*   justify-content: center;
+    gap: 24px; */
+}
+
+.logo_black {
+    /*   position: absolute;
+    top: 32px;
+    left: 95px; */
+
+    width: 130px;
+    margin-top: 32px;
+    margin-bottom: 25px;
+}
+
+.bg_square {
+    /*  position: absolute;
+    top: 124px;
+    left: 60px; */
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: #FFF;
+    padding: 60px;
+    width: 573px;
+    /*   max-height: 480px; */
+    /* margin-top: 124px; */
+    margin-bottom: 116px;
+}
+
+.bgc_button {
+    background: #FF6B0A;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin-top: 36px;
+}
+
+.bgc_button:hover {
+    background: #d85905;
+}
+
+.submain {
+    color: #0C0B0B;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+}
+
+.akcent {
+    color: #0C0B0B;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    /* 112.5% */
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+.main {
+    color: #0C0B0B;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.gus {
+    /*  position: absolute;
+    right: 0;
+    bottom: 0; */
+    width: 609px;
+    margin-bottom: -70px;
+}
+
+/* container */
+.container {
+    /* height: 964px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trezub {
+    width: 32px;
+    margin-top: 70px;
+}
+
+.subakcent {
+    color: #0C0B0B;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.main_container {
+    max-width: 772px;
+    text-align: center;
+}
+
+.inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 100px;
+
+}
+
+.fact {
+    width: 375px;
+    margin-left: 22px;
+
+}
+
+.header {
+    color: #0C0B0B;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.main_fact {
+    width: 375px;
+    text-align: center;
+}
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.form-page {
+    background: linear-gradient(90deg, #FCFEFE 0%, #A5DEFF 100%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.form {
+    border-radius: 40px;
+    background: #fff;
+    width: 573px;
+    padding: 32px 60px 60px 60px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+}
+
+.form-title {
+    color: #0C0B0B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.form-descr {
+    color: #0C0B0B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: 1px solid #005BBB;
+    background: #FFF;
+    width: 453px;
+    height: 60px;
+    color: #0C0B0B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.form-label {
+    color: #0C0B0B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.form-field {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.form-btn {
+    background: #FF6B0A;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin-top: 48px;
+}
+
+
+.form-btn:hover {
+    background: #d85905;
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts .left-section {
+    text-align: left;
+}
+
+.contacts .right-section {
+    text-align: right;
+}
+
+.contacts ul {
+    color: #0C0B0B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts li {
+    margin: 5px 10px;
+}
+
+.contacts a {
+    color: #0C0B0B;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.contacts a:hover {
+    color: #0008ff;
+    font-size: 30px;
+}
