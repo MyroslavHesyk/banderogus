@@ -10,10 +10,10 @@ goToFormButton.addEventListener('click', function (e) {
 });
 
 function clearFormFields() {
-    const modalFiends = formModal.querySelectorAll('input');
+    const formFields = form.querySelectorAll('input');
 
-    modalFiends.forEach( field => { 
-        field.value = ''
+    formFields.forEach(field => {
+        field.value = '';
     });
 }
 
@@ -38,23 +38,24 @@ form.addEventListener('submit', e => {
 
     launchBtn.setAttribute('disabled', true)
 
-    if (userEmailField?.value?.length > 30) {
+    if (userEmailField?.value?.length > 50) {
         return;
     }
 
     fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
     })
-      .then(() => {
-        showGooseAnim();
+        .then(() => {
+            showGooseAnim();
 
-        setTimeout(() => {
-            // launchBtn.removeAttribute('disabled')
-            // clearFormFields();
-        }, 2000);
-      })
-      .catch((error) => console.log('Sending form failed'));
+            setTimeout(() => {
+                launchBtn.removeAttribute('disabled')
+                clearFormFields();
+            }, 3500);
+        })
+        .catch((error) => console.log('Sending form failed'));
+    
 })
 
